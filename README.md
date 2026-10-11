@@ -17,13 +17,15 @@ Mod inspirado em **Roube um Ovo / Steal An Egg**, com visual Minecraft e detalhe
 - Aba criativa do mod para acessar os ovos.
 - Roubo de ovo: agache e clique com o botão direito em uma galinha para obter um Ovo Comum; há cooldown para impedir repetição imediata.
 - Perseguição da guardiã: a galinha roubada persegue o jogador por até 15 segundos, enquanto ele permanece a até 24 blocos. A perseguição termina se o jogador escapar, morrer/desconectar ou o tempo acabar.\n- Chocagem inicial: use qualquer ovo do mod para criar um pet galinha com nome colorido pela raridade.\n- Economia inicial: cada pet gera 1 moeda por minuto; o saldo fica salvo nos dados persistentes do jogador e é exibido ao receber moedas.
+- Pets seguem o dono quando ficam a mais de 4 blocos e param para descansar perto de uma Base Dourada.
+- Bloco Base Dourada: coloque no mundo e clique com o botão direito para contar os pets do dono em um raio de 8 blocos.
 
 ## Ainda em desenvolvimento
 
 - Texturas PNG finais dos ovos e da interface.
 - Ninhos e mecânicas de retorno/queda do ovo; a perseguição inicial da galinha já foi implementada.
 - Chocagem com temporizador e pets colecionáveis.
-- Bases com slots de pets e geração de dinheiro.
+- Slots visuais individuais e gerenciamento de pets dentro da base (a base atual conta os pets próximos; não armazena pets em slots ainda).
 - Loja, melhorias, fusão, índice e salvamento de progressão.
 - Biomas/regiões especiais, armadilhas e eventos.
 - Interface completa com dinheiro, velocidade, ovo carregado e botões próprios.
