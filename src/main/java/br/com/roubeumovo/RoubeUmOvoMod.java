@@ -1,5 +1,6 @@
 package br.com.roubeumovo;
 
+import br.com.roubeumovo.registry.ModBlocks;
 import br.com.roubeumovo.registry.ModCreativeTabs;
 import br.com.roubeumovo.registry.ModItems;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +12,7 @@ public final class RoubeUmOvoMod {
 
     public RoubeUmOvoMod() {
         var modBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);
         ModCreativeTabs.TABS.register(modBus);
     }
