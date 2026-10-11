@@ -1,7 +1,9 @@
 package br.com.roubeumovo.gameplay;
 
+import br.com.roubeumovo.registry.ModBlocks;
 import br.com.roubeumovo.registry.ModItems;
 import net.minecraft.ChatFormatting;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -117,6 +119,15 @@ public final class EggStealEvents {
 
         // Atualiza a navegação a cada meio segundo para evitar recalcular a rota em todo tick.
         if (level.getGameTime() % 10L != 0L) {
+            return;
+        }
+
+        BlockPos petPos = pet.blockPosition();
+        boolean nearBase = BlockPos.betweenClosedStream(
+                petPos.offset(-3, -2, -3), petPos.offset(3, 2, 3))
+                .anyMatch(pos -> level.getBlockState(pos).is(ModBlocks.BASE_DOURADA.get()));
+        if (nearBase) {
+            pet.getNavigation().stop();
             return;
         }
 
