@@ -32,6 +32,7 @@ public final class EggStealEvents {
     private static final double CHASE_DISTANCE = 24.0D;
     private static final String PET_KEY = "roubeumovo_pet";
     private static final String PET_OWNER_KEY = "roubeumovo_pet_owner";
+    private static final String PET_PARKED_KEY = "roubeumovo_pet_parked";
     private static final String PET_LAST_INCOME_KEY = "roubeumovo_pet_last_income";
     private static final String MONEY_KEY = "roubeumovo_money";
     private static final long PET_INCOME_INTERVAL_TICKS = 1200L;
