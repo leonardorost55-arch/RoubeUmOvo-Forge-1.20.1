@@ -1,4 +1,10 @@
 {
+  "item.roubeumovo.ovo_comum": "Ovo Comum",
+  "item.roubeumovo.ovo_raro": "Ovo Raro",
+  "item.roubeumovo.ovo_epico": "Ovo Épico",
+  "item.roubeumovo.ovo_lendario": "Ovo Lendário",
+  "item.roubeumovo.ovo_mitico": "Ovo Mítico",
+  "item.roubeumovo.ovo_secreto": "Ovo Secreto",
   "itemGroup.roubeumovo.main": "Roube um Ovo",
   "screen.roubeumovo.inventory": "Inventário Dourado"
 }
