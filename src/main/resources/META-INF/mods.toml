@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="roubeumovo"
+version="1.0.0"
+displayName="Roube um Ovo"
+authors="RoubeUmOvo"
+description='''Um mod inspirado em Roube um Ovo, com inventário dourado, ovos raros e progressão.'''
+
+[[dependencies.roubeumovo]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.roubeumovo]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
