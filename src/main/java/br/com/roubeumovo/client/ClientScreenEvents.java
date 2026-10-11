@@ -22,7 +22,7 @@ public final class ClientScreenEvents {
         if (event.getLevel().getBlockState(event.getPos()).is(ModBlocks.BASE_DOURADA.get())) {
             Minecraft minecraft = Minecraft.getInstance();
             if (minecraft.player != null && minecraft.screen == null) {
-                minecraft.setScreen(new BaseDouradaScreen());
+                minecraft.setScreen(new BaseDouradaScreen(event.getPos()));
             }
         }
     }
