@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "roubeumovo:block/base_dourada"
+    "all": "minecraft:block/gold_block"
   }
 }
