@@ -2,6 +2,8 @@ package br.com.roubeumovo.registry;
 
 import br.com.roubeumovo.RoubeUmOvoMod;
 import br.com.roubeumovo.item.EggItem;
+import br.com.roubeumovo.registry.ModBlocks;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,6 +13,9 @@ import net.minecraftforge.registries.RegistryObject;
 public final class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, RoubeUmOvoMod.MOD_ID);
+
+    public static final RegistryObject<Item> BASE_DOURADA = ITEMS.register("base_dourada",
+            () -> new BlockItem(ModBlocks.BASE_DOURADA.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> OVO_COMUM = ITEMS.register("ovo_comum",
             () -> new EggItem(new Item.Properties(), "Comum", ChatFormatting.WHITE));
