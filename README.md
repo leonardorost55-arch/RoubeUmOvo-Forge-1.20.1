@@ -25,7 +25,7 @@ Mod inspirado em **Roube um Ovo / Steal An Egg**, com visual Minecraft e detalhe
 - Texturas PNG finais dos ovos e da interface.
 - Ninhos e mecânicas de retorno/queda do ovo; a perseguição inicial da galinha já foi implementada.
 - Chocagem com temporizador e pets colecionáveis.
-- Interface visual com quatro slots individuais da Base Dourada; por enquanto, os quatro slots funcionam como estacionamento lógico de pets, sem menu gráfico próprio.
+- Painel visual da Base Dourada com quatro espaços dourados e instruções; o estacionamento dos pets é controlado ao clicar com o botão direito no bloco.
 - Loja, melhorias, fusão, índice e salvamento de progressão.
 - Biomas/regiões especiais, armadilhas e eventos.
 - Interface completa com dinheiro, velocidade, ovo carregado e botões próprios.
