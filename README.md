@@ -15,12 +15,13 @@ Mod inspirado em **Roube um Ovo / Steal An Egg**, com visual Minecraft e detalhe
 - Inventário com moldura dourada, aberto ao pressionar **E**, preservando os slots reais do inventário vanilla.
 - Seis itens de ovo registrados: Comum, Raro, Épico, Lendário, Mítico e Secreto.
 - Aba criativa do mod para acessar os ovos.
-- Mecânica inicial: agache e clique com o botão direito em uma galinha para roubar um Ovo Comum. Há um cooldown curto para impedir repetição imediata.
+- Roubo de ovo: agache e clique com o botão direito em uma galinha para obter um Ovo Comum; há cooldown para impedir repetição imediata.
+- Perseguição da guardiã: a galinha roubada persegue o jogador por até 15 segundos, enquanto ele permanece a até 24 blocos. A perseguição termina se o jogador escapar, morrer/desconectar ou o tempo acabar.
 
 ## Ainda em desenvolvimento
 
 - Texturas PNG finais dos ovos e da interface.
-- Galinhas guardiãs que perseguem o jogador, ninhos e retorno/queda do ovo.
+- Ninhos e mecânicas de retorno/queda do ovo; a perseguição inicial da galinha já foi implementada.
 - Chocagem com temporizador e pets colecionáveis.
 - Bases com slots de pets e geração de dinheiro.
 - Loja, melhorias, fusão, índice e salvamento de progressão.
@@ -43,7 +44,7 @@ gradle runClient
 
 O arquivo JAR deverá ser gerado em `build/libs/` caso a compilação termine sem erros. Copie o JAR para a pasta `mods` de uma instalação Forge 1.20.1.
 
-**Aviso:** a compilação ainda precisa ser confirmada por uma execução real do build. As funcionalidades listadas como em desenvolvimento não estão implementadas.
+**Aviso:** o GitHub Actions confirmou uma compilação bem-sucedida no commit `e26564349eca2404663266d1c74edceb4f039dc0`. A nova mecânica de perseguição foi adicionada depois desse commit e está aguardando sua própria compilação. As funcionalidades listadas como em desenvolvimento não estão implementadas.
 
 ## Licença
 
