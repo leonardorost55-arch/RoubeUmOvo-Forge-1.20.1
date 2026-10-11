@@ -6,6 +6,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingEvent;
@@ -90,7 +91,7 @@ public final class EggStealEvents {
         }
 
         UUID targetId = data.getUUID(GUARDIAN_TARGET_KEY);
-        ServerPlayer target = level.getPlayerByUUID(targetId);
+        Player target = level.getPlayerByUUID(targetId);
         if (target == null || !target.isAlive()
                 || chicken.distanceToSqr(target) > CHASE_DISTANCE * CHASE_DISTANCE) {
             stopChasing(chicken);
@@ -119,7 +120,7 @@ public final class EggStealEvents {
             return;
         }
 
-        ServerPlayer owner = level.getPlayerByUUID(data.getUUID(PET_OWNER_KEY));
+        Player owner = level.getPlayerByUUID(data.getUUID(PET_OWNER_KEY));
         if (owner == null || !owner.isAlive()) {
             return;
         }
