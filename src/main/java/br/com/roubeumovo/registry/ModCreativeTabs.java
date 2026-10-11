@@ -17,6 +17,7 @@ public final class ModCreativeTabs {
                     .title(Component.translatable("itemGroup.roubeumovo.main"))
                     .icon(() -> new ItemStack(ModItems.OVO_LENDARIO.get()))
                     .displayItems((parameters, output) -> {
+                        output.accept(ModItems.BASE_DOURADA.get());
                         output.accept(ModItems.OVO_COMUM.get());
                         output.accept(ModItems.OVO_RARO.get());
                         output.accept(ModItems.OVO_EPICO.get());
