@@ -1,42 +1,49 @@
 # Roube um Ovo — Minecraft Java 1.20.1 (Forge)
 
-Mod inspirado no jogo **Roube um Ovo / Steal An Egg**, com visual Minecraft e detalhes dourados.
+Mod inspirado em **Roube um Ovo / Steal An Egg**, com visual Minecraft e detalhes dourados.
 
 ## Requisitos
 
 - Minecraft Java Edition 1.20.1
-- Forge 47.2.0 ou outra versão Forge 47 compatível
+- Minecraft Forge 47.x (configuração atual usa 47.2.0)
 - Java 17
-- Gradle (ou wrapper Gradle, quando incluído)
+- Gradle 8.8
 
-## Estado atual
+## Funcionalidades no código atual
 
-- [x] Estrutura inicial do projeto Forge
-- [x] Tela de inventário dourada aberta no lugar do inventário padrão ao pressionar **E**
-- [x] Mantém os slots reais do inventário, armaduras e movimentação de itens
-- [ ] Itens e ovos com raridades
-- [ ] Galinhas guardiãs e mecânica de perseguição
-- [ ] Chocagem de ovos e pets
-- [ ] Bases que geram dinheiro
-- [ ] Loja, melhorias, fusão e índice
-- [ ] Biomas/regiões e eventos
-- [ ] Texturas pixel-art completas e sons
+- Estrutura de projeto Forge 1.20.1.
+- Inventário com moldura dourada, aberto ao pressionar **E**, preservando os slots reais do inventário vanilla.
+- Seis itens de ovo registrados: Comum, Raro, Épico, Lendário, Mítico e Secreto.
+- Aba criativa do mod para acessar os ovos.
+- Mecânica inicial: agache e clique com o botão direito em uma galinha para roubar um Ovo Comum. Há um cooldown curto para impedir repetição imediata.
 
-> O inventário atual é a primeira fatia funcional da interface. As mecânicas listadas como pendentes ainda não estão implementadas.
+## Ainda em desenvolvimento
+
+- Texturas PNG finais dos ovos e da interface.
+- Galinhas guardiãs que perseguem o jogador, ninhos e retorno/queda do ovo.
+- Chocagem com temporizador e pets colecionáveis.
+- Bases com slots de pets e geração de dinheiro.
+- Loja, melhorias, fusão, índice e salvamento de progressão.
+- Biomas/regiões especiais, armadilhas e eventos.
+- Interface completa com dinheiro, velocidade, ovo carregado e botões próprios.
 
 ## Compilar
 
-Em um ambiente com Java 17 e acesso à internet:
+Com Java 17 e acesso à internet:
 
 ```bash
 gradle build
 ```
 
-O JAR deverá aparecer em `build/libs/`. Para desenvolver no cliente, use `gradle runClient`.
+Para abrir o cliente de desenvolvimento:
 
-## Instalação
+```bash
+gradle runClient
+```
 
-Copie o JAR gerado para a pasta `mods` de uma instalação Minecraft 1.20.1 com Forge.
+O arquivo JAR deverá ser gerado em `build/libs/` caso a compilação termine sem erros. Copie o JAR para a pasta `mods` de uma instalação Forge 1.20.1.
+
+**Aviso:** a compilação ainda precisa ser confirmada por uma execução real do build. As funcionalidades listadas como em desenvolvimento não estão implementadas.
 
 ## Licença
 
