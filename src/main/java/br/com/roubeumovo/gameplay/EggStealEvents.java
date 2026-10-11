@@ -104,6 +104,38 @@ public final class EggStealEvents {
 
 
     @SubscribeEvent
+    public static void onPetFollow(LivingEvent.LivingTickEvent event) {
+        if (!(event.getEntity() instanceof Chicken pet)
+                || !(pet.level() instanceof ServerLevel level)) {
+            return;
+        }
+
+        var data = pet.getPersistentData();
+        if (!data.getBoolean(PET_KEY) || !data.hasUUID(PET_OWNER_KEY)) {
+            return;
+        }
+
+        // Atualiza a navegação a cada meio segundo para evitar recalcular a rota em todo tick.
+        if (level.getGameTime() % 10L != 0L) {
+            return;
+        }
+
+        Player owner = level.getPlayerByUUID(data.getUUID(PET_OWNER_KEY));
+        if (owner == null || !owner.isAlive()) {
+            pet.getNavigation().stop();
+            return;
+        }
+
+        double distance = pet.distanceToSqr(owner);
+        if (distance > 4.0D * 4.0D) {
+            pet.getLookControl().setLookAt(owner, 30.0F, 30.0F);
+            pet.getNavigation().moveTo(owner, 1.1D);
+        } else if (distance < 2.0D * 2.0D) {
+            pet.getNavigation().stop();
+        }
+    }
+
+    @SubscribeEvent
     public static void onPetIncome(LivingEvent.LivingTickEvent event) {
         if (!(event.getEntity() instanceof Chicken pet)
                 || !(pet.level() instanceof ServerLevel level)) {
