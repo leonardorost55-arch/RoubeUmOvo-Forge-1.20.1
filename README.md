@@ -16,7 +16,7 @@ Mod inspirado em **Roube um Ovo / Steal An Egg**, com visual Minecraft e detalhe
 - Seis itens de ovo registrados: Comum, Raro, Épico, Lendário, Mítico e Secreto.
 - Aba criativa do mod para acessar os ovos.
 - Roubo de ovo: agache e clique com o botão direito em uma galinha para obter um Ovo Comum; há cooldown para impedir repetição imediata.
-- Perseguição da guardiã: a galinha roubada persegue o jogador por até 15 segundos, enquanto ele permanece a até 24 blocos. A perseguição termina se o jogador escapar, morrer/desconectar ou o tempo acabar.
+- Perseguição da guardiã: a galinha roubada persegue o jogador por até 15 segundos, enquanto ele permanece a até 24 blocos. A perseguição termina se o jogador escapar, morrer/desconectar ou o tempo acabar.\n- Chocagem inicial: use qualquer ovo do mod para criar um pet galinha com nome colorido pela raridade.\n- Economia inicial: cada pet gera 1 moeda por minuto; o saldo fica salvo nos dados persistentes do jogador e é exibido ao receber moedas.
 
 ## Ainda em desenvolvimento
 
@@ -44,7 +44,7 @@ gradle runClient
 
 O arquivo JAR deverá ser gerado em `build/libs/` caso a compilação termine sem erros. Copie o JAR para a pasta `mods` de uma instalação Forge 1.20.1.
 
-**Aviso:** o GitHub Actions confirmou uma compilação bem-sucedida no commit `e26564349eca2404663266d1c74edceb4f039dc0`. A nova mecânica de perseguição foi adicionada depois desse commit e está aguardando sua própria compilação. As funcionalidades listadas como em desenvolvimento não estão implementadas.
+**Aviso:** as mecânicas de perseguição, chocagem e renda dos pets foram adicionadas em commits posteriores à primeira compilação confirmada. Consulte a aba Actions para verificar o resultado da compilação mais recente. As funcionalidades listadas como em desenvolvimento ainda não estão implementadas.
 
 ## Licença
 
